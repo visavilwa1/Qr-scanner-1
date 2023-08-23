@@ -1,0 +1,99 @@
+/* Impoerted fonts have to be first */
+@import url( "ttps://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+  
+:root{
+    --white: hsl(0, 0%, 100%);
+    --light-gray : hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220,15%, 55%)
+    --drop-shadow-blue: hsl(218, 25%,77%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+/* Mobile : 375%
+Desktop : 1440px
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "outfit", sans-serif;
+    font-size: 15px;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* mobile design */
+
+.wrapper {
+     margin: 15px;
+     width: 350px;
+     border-radius: 20px;
+     background-color: var(--white);
+     box-shadow: 4px 4px 100px 4px var(--drop-shadow-blue);
+
+}
+
+.content-container{
+    padding: 12px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 24px;
+}
+.image {
+    max-width: 95%;
+    border-radius: 10px;
+}
+.title
+.about{
+    max-width: 80%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 24px;
+    color: var(--dark-blue);
+    text-align: center;
+
+}
+.about{
+    text-align: center;
+    color: var(--grayish-blue);
+}
+
+.attribution{
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--grayish-blue);
+   
+}
+
+.attribution a:link,
+.attribution a:visited,
+.attribution a:hover,
+.attribution a:active {
+
+     text-decoration: none;
+     color: var(--dark-blue);
+     transition: all 300ms;
+     font-wieght: bold;
+
+ }
+
+ @media screen  and (max-width:320px) {
+    .attribution{
+        gap: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+    }
+    
+ }
